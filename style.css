@@ -74,6 +74,33 @@ body {
   text-align: center;
 }
 
+
+#alcohol {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  width: 20vw;
+  height: 4vw;
+  background-color: white;
+  display: none;
+  font-size: 2.5vw;
+  animation: slide-bottom  1.2s ease-in-out;
+  animation-fill-mode: forwards;
+  perspective: 1000;
+  will-change: auto;
+}
+
+@keyframes slide-bottom  {
+  0%{ transform: scale3d(1, 1, 1); transform: translateY(-500px);}
+  60% {transform: scale3d(1.25, 0.75, 1);}
+  70% {transform: scale3d(0.75, 1.25, 1);}
+  80%{ transform: scale3d(1.15, 0.85, 1);}
+  90% {transform: scale3d(0.95, 1.05, 1); }
+  95%{ transform: scale3d(1.05, 0.95, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+
 @media screen and (max-width: 48rem) {
   .pre-title {
     font-size: 10vw;
@@ -97,32 +124,14 @@ body {
     width: 80px;
     height: 60px;
   }
+  #alcohol {
+    width: 30vw;
+    height: 6vw;
+    font-size: 4vw;
+    left: 36vw;
+  }
 }
 
 
-#alcohol {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  transform: translate(-50%,-50%);
-  width: 400px;
-  height: 80px;
-  background-color: white;
-  display: none;
-  font-size: 50px;
-  animation: slide-bottom  1.2s ease-in-out;
-  animation-fill-mode: forwards;
-  perspective: 1000;
-  will-change: auto;
-}
 
-@keyframes slide-bottom  {
-  0%{ transform: scale3d(1, 1, 1); transform: translateY(-500px);}
-  60% {transform: scale3d(1.25, 0.75, 1);}
-  70% {transform: scale3d(0.75, 1.25, 1);}
-  80%{ transform: scale3d(1.15, 0.85, 1);}
-  90% {transform: scale3d(0.95, 1.05, 1); }
-  95%{ transform: scale3d(1.05, 0.95, 1); }
-  100% { transform: scale3d(1, 1, 1); }
-}
 
